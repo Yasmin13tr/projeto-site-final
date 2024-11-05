@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hboflix</title>
+    <title>Cine&Séries - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Catálogo</h1>
-        <p></p>
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>hboflix</h1>
+        <p>Bem-vindo ao lugar onde a pirataria não tem limites!</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="" alt="Poster do Filme 1">
+                <h3>A substancia</h3>
+                <p>Terror/Ficção cientifica</p>
+                <p>2024</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://cdn.fstatic.com/media/movies/covers/2021/05/FearStreet_Teaser_Vertical_27x40_RGB_PT-BR20210518-4912-15i8tcc.jpeg" alt="Poster do Filme 2">
+                <h3>Rua medo: 1994</h3>
+                <p>Terror</p>
+                <p>2021</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdublagem.fandom.com%2Fwiki%2FP%25C3%25A2nico&psig=AOvVaw1Xm6f-DxvghrdS2iUduYqb&ust=1730933504211000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIC4g_ejxokDFQAAAAAdAAAAABAE" alt="Poster do Filme 3">
+                <h3>Panico</h3>
+                <p>Terror</p>
+                <p>1996</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 hboflix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
